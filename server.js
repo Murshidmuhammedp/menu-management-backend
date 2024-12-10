@@ -10,7 +10,10 @@ const app = express();
 
 dotenv.config();
 
-app.use(cors())
+app.use(cors({
+    origin: "https://menu-management-frontend-blush.vercel.app/",
+    credentials: true
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

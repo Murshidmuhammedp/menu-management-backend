@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
-    origin: "https://menu-management-frontend-blush.vercel.app/",
+    origin: "https://menu-management-frontend-blush.vercel.app",
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true
